@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.HelloController">
+<!--    <padding>-->
+<!--            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
+<!--    </padding>-->
+
+    <Label fx:id="startText"/>
+    <Label fx:id="result"/>
+    <Label fx:id="lastScore"/>
+    <Label fx:id="winner"/>
+    <VBox alignment="BASELINE_CENTER">
+        <Button fx:id="btnCom1" text="Milan" onAction="#onCommandClick1" visible="false"/>
+        <Button fx:id="btnCom2" text="Madrid" onAction="#onCommandClick2" visible="false"/>
+    </VBox>
+    <Button fx:id="startGame" text="Start the game." onAction="#onStartButtonClick"/>
+</VBox>
